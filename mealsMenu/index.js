@@ -3,7 +3,7 @@ const cheerio = require("cheerio")
 
 const getHtml = async() => {
     try{
-        const html = await axios.get("https://school.koreacharts.com/school/meals/B000011300/contents.html")
+        const html = await axios.get("https://school.koreacharts.com/school/meals/B000011300/202312.html")
         let ulList = []
         const $ = cheerio.load(html.data)
         const bodyList = $("table.table-bordered tbody tr")
@@ -11,12 +11,12 @@ const getHtml = async() => {
           ulList[i] = {
             idx: i + 1,
             // title: $(element).find("tr.box-title").text().replace(/\s/g, ""),
-            day: $(element).find("td.text-center").text().replace(/\s/g, ""),
-            week: $(element).find("td.text-center").text().replace(/\s/g, ""),
-            menu: $(element).find("td.text-center p").text().replace(/\s/g, ""),
+            day: $(element).find("td.text-center:nth-child(1)").text().replace(/\s/g, " "),
+            week: $(element).find("td.text-center:nth-child(2)").text().replace(/\s/g, " "),
+            menu: $(element).find("td.text-center p").text().replace(/\s/g, " ")
           }
         })
-        console.log("bodyList : ", ulList)
+        console.log("Meals Menu : ", ulList)
     }catch(error){
         console.error(error)
     }
