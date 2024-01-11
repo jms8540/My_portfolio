@@ -16,10 +16,10 @@
             <div class="contents">
                 <form action="#">
                     <div class="insertInputBox">
-                        <input type="text" placeholder="제목">
+                        <input type="text" name="title" placeholder="제목">
                         <input type="submit" value="업로드">
                     </div><br>
-                    <textarea name="textBox" id="textBox" rows="10" placeholder="내용입력" onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
+                    <textarea name="textBox" id="textBox" rows="10" name="textContent" placeholder="내용입력" onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
                 </form>
                 <a href="./select.html" class="insertBack">돌아가기</a>
             </div>
