@@ -39,22 +39,29 @@ footer {
     margin: 0px 10px;
 }
 
+.div{
+    display: flex;
+    justify-content: flex-end;
+}
 .addBt {
-    width: 120px;
-    height: 60px;
+    width: 80px;
+    height: 40px;
     text-align: center;
-    line-height: 60px;
-    margin-right: 40px;
-    font-size: 24px;
+    line-height: 40px;
+    margin:15px 20px;
+    font-size: 18px;
     font-weight: bold;
     border: 1px solid black;
-    border-radius: 0px 20px 0px 20px;
+    border-radius: 15px;
+}
+.addBt:hover{
+    color: #fff;
+    background-color: orange;
 }
 
 h1 {
     text-align: center;
     font-size: 36px;
-    margin-bottom: 10px;
 }
 
 .contents {
@@ -135,6 +142,7 @@ h1 {
 #select_deleteBt{
     border: none;
     font-size: 16px;
+    background: none;
 }
 #select_deleteBt:hover{
     color: red;
@@ -143,22 +151,28 @@ h1 {
 footer{
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 80px;
     background-color: orange;
 }
-#button_menuId1, #button_menuId2{
-    display: none;
+.aBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-label{
+footer a{
+    font-size: 26px;
+    padding: 20px;
     color: #fff;
+    display: block;
     font-weight: bold;
-    font-size: 24px;
-    border-bottom:4px solid #fff;
-    padding: 18px;
 }
-.form-radio::before{border-radius: 50%;}
-
-
+footer a:hover{
+    color: orange;
+    background-color: #fff;
+    transition: 0.4s;
+}
 
 
 

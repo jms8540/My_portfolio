@@ -23,7 +23,7 @@ const getHtml = async() => {
         console.error(error)
     }
 }
-// getHtml()
+getHtml()
 
 
 app.listen(3000, function(){
