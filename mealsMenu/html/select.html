@@ -12,6 +12,7 @@
 <body>
     <div class="wrap">
         <header>
+            <a href="./index.html" class="logoutBt">로그아웃</a>
             <!-- <div class="login_btBox">
                 <a href="#">로그인</a>|
                 <a href="#">회원가입</a>
@@ -19,6 +20,7 @@
         </header>
         <div class="container">
             <h1>게시글</h1>
+            <a href="./insert.html" class="addBt">생성</a>
             <div class="contents">
 
                 <div class="item">
@@ -26,16 +28,20 @@
                     <p>contents texf34t54y5yhu4w57yty4w565y5364wyghze46ta546t   5yw457y4ytdddddddfwfewfwefw</p>
                     <div class="aTageBox">
                         <a href="./update.html">수정</a>
-                        <a href="./delete.html">삭제</a>
+                        <button id="select_deleteBt">삭제</button>
                     </div>
                 </div>
 
             </div>
         </div>
         <footer>
-            <a href="./insert.html" class="addBt">생성</a>
+            <input type="radio" name="button_menu" id="button_menuId1">
+            <label for="button_menuId1">급식 게시판</label>
+            <input type="radio" name="button_menu" id="button_menuId2">
+            <label for="button_menuId2">오늘의 메뉴</label>
         </footer>
     </div>
+    <script src="../script.js"></script>
 </body>
 
 </html>

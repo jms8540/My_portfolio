@@ -57,10 +57,12 @@ a:nth-child(2) {
 .loginBox a:nth-child(1):hover{
     background: #fff;
     color: #3F3F3F;
+    border: 1px solid black;
 }
 .loginBox a:nth-child(2):hover{
     background: #3F3F3F;
     color: #fff;
+    border: none;
 }
 
 @media screen {
