@@ -1,5 +1,7 @@
 const axios = require("axios")
 const cheerio = require("cheerio")
+const express = require('express')
+const app = express()
 
 const getHtml = async() => {
     try{
@@ -21,21 +23,40 @@ const getHtml = async() => {
         console.error(error)
     }
 }
+// getHtml()
 
-getHtml()
 
-// const express = require('express')
-// const app = express()
+app.listen(3000, function(){
+    console.log('test')
+})
 
-// app.listen(3000, function(){
-//     console.log('test')
-// })
+app.get('/test', function(req, res){
+    res.send('민트초코맛있어민트초코맛있어민트초코맛있어')
+})
+app.get('/', function(req, res){
+    res.sendFile(__dirname+'/html/index.html')
+})
+app.get('/signUp.html', function(req, res){
+  res.sendFile(__dirname+'/html/signUp.html')
+})
+app.get('/signIn.html', function(req, res){
+  res.sendFile(__dirname+'/html/signIn.html')
+})
+app.get('/insert.html', function(req, res){
+  res.sendFile(__dirname+'/html/insert.html')
+})
+app.get('/update.html', function(req, res){
+  res.sendFile(__dirname+'/html/update.html')
+})
+app.get('/delete.html', function(req, res){
+  res.sendFile(__dirname+'/html/delete.html')
+})
+app.get('/select.html', function(req, res){
+  res.sendFile(__dirname+'/html/select.html')
+})
 
-// app.get('/test', function(req, res){
-//     res.send('민트초코맛있어민트초코맛있어민트초코맛있어')
-// })
 // app.get('/', function(req, res){
-//     res.sendFile(__dirname+'/index.html')
+//   res.sendFile(__dirname+'/html/index.html')
 // })
 
 

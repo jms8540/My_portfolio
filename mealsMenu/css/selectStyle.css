@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: black;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.wrap {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header,
+footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login_btBox {
+    display: flex;
+    align-items: center;
+}
+
+.login_btBox>a {
+    display: block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.addBt {
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin-right: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 0px 20px 0px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contents {
+    height: 500px;
+    width: 1000px;
+    /* border: 1px solid black; */
+    box-shadow: 3px 6px 10px 2px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.item {
+    height: 40px;
+    line-height: 40px;
+    width: 80%;
+    border-radius: 15px;
+    padding: 0px 15px;
+    margin-top: 15px;
+    border: 1px solid black;
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+}
+
+.item p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 70%;
+    min-width: 70%;
+}
+
+.item span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 8%;
+    text-align: center;
+}
+
+.aTageBox {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 12%;
+    text-align: center;
+}
+
+.aTageBox>a:nth-child(1):hover {
+    color: blue;
+    font-weight: bold;
+}
+
+.aTageBox>a:nth-child(2):hover {
+    color: red;
+    font-weight: bold;
+}

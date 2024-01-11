@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: black;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.wrap {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contents {
+    height: 360px;
+    width: 800px;
+    /* border: 1px solid black; */
+    box-shadow: 3px 6px 10px 2px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    position: relative;
+}
+
+.contents form {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+}
+
+.insertInputBox {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.insertInputBox input:nth-child(1) {
+    width: 500px;
+    height: 40px;
+    padding-left: 15px;
+}
+
+.insertInputBox input:nth-child(2) {
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.updateBack {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.updateBack:hover {
+    color: red;
+    font-weight: bold;
+}

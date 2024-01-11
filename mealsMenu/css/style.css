@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.wrap {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 42px;
+}
+
+h1 {
+    font-size: 68px;
+}
+
+a {
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 25px;
+    background: #3F3F3F;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+
+a:nth-child(2) {
+    background: none;
+    border: 1px solid black;
+    color: #000;
+}
+
+.container {
+    height: 380px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginBox {
+    height: 100px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}

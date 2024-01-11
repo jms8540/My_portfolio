@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 생성</title>
+    <link rel="stylesheet" href="../css/insertStyle.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>게시글 업로드</h1>
+            <div class="contents">
+                <form action="#">
+                    <div class="insertInputBox">
+                        <input type="text" placeholder="제목">
+                        <input type="submit" value="업로드">
+                    </div><br>
+                    <textarea name="textBox" id="textBox" rows="10" placeholder="내용입력" onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
+                </form>
+                <a href="./select.html" class="insertBack">돌아가기</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
