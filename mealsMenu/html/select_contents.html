@@ -1,39 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/crawlingStyle.css">
+    <title>게시글 보기</title>
+    <link rel="stylesheet" href="../css/selectStyle.css">
 </head>
+
 <body>
     <div class="wrap">
         <header>
-            <a href="./index.html" class="logoutBt">로그아웃</a>
+            <a href="./select.html" class="logoutBt">돌아가기</a>
         </header>
-
         <div class="container">
-            <h1><급식표></h1>
-            <div class="days">
-
-            </div>
-
-            <div class="crawlingDate" id="getMenu">
-                <button><</button>
-                <div class="contents">
-                    
+            <div class="contents select_contents">
+                <!-- <h2>(유저 닉네임)님의 작성 글</h2> -->
+                <h3>(tille)</h3>
+                <div class="textBox">
+                    (text)
                 </div>
-                <button>></button>
             </div>
         </div>
-
         <footer>
             <div class="aBox">    
                 <a href="./select.html" target="_parent" rel="noopener noreferrer">급식 게시판</a>
                 <a href="./crawling.html" target="_parent" rel="noopener noreferrer">오늘의 메뉴</a>
             </div>
         </footer>
-        <script src="../index.js"></script>
     </div>
+    <script src="../script.js"></script>
 </body>
+
 </html>

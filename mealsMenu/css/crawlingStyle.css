@@ -51,7 +51,28 @@ h1{
     height: 300px;
     margin-top: 30px;
     border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+.crawlingDate>button{
+    height: 50px;
+    width: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.crawlingDate>button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.contents{
+    width: 70%;
+    height: 100%;
+    border: 1px solid black;
+}
+
 .logoutBt{
     width: 120px;
     height: 40px;

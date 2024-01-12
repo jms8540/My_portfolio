@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>급식 메뉴</title>
+</head>
+<body>
+    <h1>급식 메뉴</h1>
+    <% ulList.forEach(item => { %>
+        <div>
+            <p>번호: <%= item.idx %></p>
+            <p>날짜: <%= item.day %></p>
+            <p>요일: <%= item.week %></p>
+            <p>메뉴: <%= item.menu %></p>
+        </div>
+    <% }); %>
+</body>
+</html>
